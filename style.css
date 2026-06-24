@@ -1,0 +1,109 @@
+body{
+margin:0;
+overflow:hidden;
+font-family:Arial, sans-serif;
+background:linear-gradient(
+135deg,
+#0f172a,
+#1e3a8a,
+#7c3aed
+);
+color:white;
+text-align:center;
+}
+
+/* Splash */
+
+#splash{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.birthday-text{
+font-size:5rem;
+animation:glow 2s infinite;
+}
+
+@keyframes glow{
+
+0%{
+opacity:0.5;
+transform:scale(1);
+}
+
+50%{
+opacity:1;
+transform:scale(1.1);
+}
+
+100%{
+opacity:0.5;
+transform:scale(1);
+}
+}
+
+/* Gift Page */
+
+#giftPage{
+display:none;
+margin-top:150px;
+}
+
+.gift-box{
+font-size:120px;
+cursor:pointer;
+animation:bounce 2s infinite;
+}
+
+@keyframes bounce{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-20px);
+}
+
+100%{
+transform:translateY(0);
+}
+}
+
+/* Celebration */
+
+#celebration{
+display:none;
+padding-top:50px;
+}
+
+.main-title{
+font-size:70px;
+text-shadow:0 0 20px gold;
+}
+
+.characters{
+display:flex;
+justify-content:center;
+gap:50px;
+margin-top:50px;
+}
+
+.character{
+width:250px;
+}
+
+.cake{
+width:200px;
+animation:bounce 1s infinite;
+}
+
+#message{
+margin-top:50px;
+font-size:24px;
+width:70%;
+margin-left:auto;
+margin-right:auto;
+}
